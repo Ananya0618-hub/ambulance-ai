@@ -1,0 +1,19 @@
+1) Building city ...
+   225 intersections, 403 roads, hospitals at [159, 107, 14]
+2) A* vs Dijkstra ...
+   A* avg expanded 46.5 vs Dijkstra 109.2  (57% fewer), same optimal cost: True
+3) Genetic Algorithm placement ...
+   GA     : avg response 5.76 min, coverage<= 10 min 96.5%
+   Random : avg response 6.17 min, coverage<= 10 min 91.6%  (same 9000 evaluations)
+4) Fuzzy triage examples ...
+   Cardiac arrest, 70y          ->  92.6
+   Fracture, 8y                 ->  71.7
+   Fracture, 30y                ->  45.0
+   Minor cut, 30y               ->  13.1
+   Minor cut, 30y, waited 20m   ->  45.0
+   Fever, 80y                   ->  45.0
+5) Dispatch simulation (FIFO vs fuzzy) ...
+   FIFO : critical avg 16.3 min | minor avg 20.9 min | all 18.4 min
+   Fuzzy: critical avg 11.2 min | minor avg 24.6 min | all 19.9 min
+
+Done. Plots and summary.json saved in ./results

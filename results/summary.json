@@ -1,0 +1,160 @@
+{
+  "astar_vs_dijkstra": {
+    "pairs": 200,
+    "same_optimal_cost": true,
+    "avg_expanded_astar": 46.53,
+    "avg_expanded_dijkstra": 109.21,
+    "reduction_pct": 57.394011537405
+  },
+  "ga": {
+    "stations": [
+      128,
+      72,
+      120,
+      139,
+      79,
+      147,
+      185,
+      190
+    ],
+    "avg_response": 5.7185784360739245,
+    "coverage": 0.9558751030077519,
+    "evaluations": 9000
+  },
+  "random_search": {
+    "stations": [
+      68,
+      192,
+      185,
+      94,
+      158,
+      121,
+      171,
+      72
+    ],
+    "cost": 7.009543842595624,
+    "avg_response": 6.1690388584588245,
+    "coverage": 0.91594950158632
+  },
+  "fuzzy_examples": [
+    {
+      "case": "Cardiac arrest, 70y",
+      "severity": 9.5,
+      "age": 70,
+      "wait": 0,
+      "priority": 92.6
+    },
+    {
+      "case": "Fracture, 8y",
+      "severity": 5,
+      "age": 8,
+      "wait": 2,
+      "priority": 71.7
+    },
+    {
+      "case": "Fracture, 30y",
+      "severity": 5,
+      "age": 30,
+      "wait": 2,
+      "priority": 45.0
+    },
+    {
+      "case": "Minor cut, 30y",
+      "severity": 2,
+      "age": 30,
+      "wait": 0,
+      "priority": 13.1
+    },
+    {
+      "case": "Minor cut, 30y, waited 20m",
+      "severity": 2,
+      "age": 30,
+      "wait": 20,
+      "priority": 45.0
+    },
+    {
+      "case": "Fever, 80y",
+      "severity": 3,
+      "age": 80,
+      "wait": 5,
+      "priority": 45.0
+    }
+  ],
+  "dispatch_single_run": {
+    "rate_per_hour": 8.0,
+    "fifo": {
+      "calls": 79,
+      "avg_response_all": 19.2296355489087,
+      "avg_response_critical": 17.92547423484442,
+      "critical_within_target_pct": 40.0,
+      "avg_response_minor": 20.994777348769404,
+      "max_response": 58.120632104928156
+    },
+    "fuzzy": {
+      "calls": 79,
+      "avg_response_all": 23.33799303422115,
+      "avg_response_critical": 14.5471127713128,
+      "critical_within_target_pct": 40.0,
+      "avg_response_minor": 29.965715985742662,
+      "max_response": 170.9180799176206
+    }
+  },
+  "dispatch_load_sweep": {
+    "fifo_critical": [
+      7.8695081120679635,
+      9.876110393785797,
+      11.725486441887307,
+      13.826009066689869,
+      26.97853853676188,
+      48.45366888107012
+    ],
+    "fuzzy_critical": [
+      7.8695081120679635,
+      9.876110393785797,
+      11.721324995218003,
+      12.91620337293811,
+      17.99780318167379,
+      16.996532976800157
+    ],
+    "fifo_minor": [
+      7.105516774044261,
+      7.988143875991151,
+      9.587606927088537,
+      13.055883592969238,
+      19.958507399282666,
+      40.17393772041431
+    ],
+    "fuzzy_minor": [
+      7.105516774044261,
+      7.988143875991151,
+      9.846902418118873,
+      13.726766939438027,
+      26.756989316110285,
+      62.935107583248644
+    ],
+    "fifo_all": [
+      7.507576128797524,
+      8.380420751785488,
+      9.823853026269635,
+      12.914013542111444,
+      21.427125558679286,
+      40.98425422614537
+    ],
+    "fuzzy_all": [
+      7.507576128797524,
+      8.380420751785488,
+      9.85217638288609,
+      12.870898308583019,
+      21.29368783068646,
+      40.71016266145883
+    ],
+    "rates": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}
